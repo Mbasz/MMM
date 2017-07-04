@@ -1,26 +1,115 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="z2v-2m-z1I">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--What would you like to achieve today?-->
+        <scene sceneID="XKG-uT-O7q">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lqb-op-5BK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="xOr-07-iFm" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="xfp-2t-nlf"/>
+                        <viewControllerLayoutGuide type="bottom" id="NjK-Tb-tuC"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="ThJ-fL-LRe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ETI-iH-RFa">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2C-4X-vmc">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Health"/>
+                                        <connections>
+                                            <segue destination="rYD-Im-0Gw" kind="show" identifier="0" id="QA3-8g-zaw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJW-Xq-Z1v">
+                                        <rect key="frame" x="0.0" y="151" width="375" height="150.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Skills"/>
+                                        <connections>
+                                            <segue destination="rYD-Im-0Gw" kind="show" identifier="1" id="YFh-d2-9Ke"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENu-KG-HfM">
+                                        <rect key="frame" x="0.0" y="301.5" width="375" height="151"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Explore"/>
+                                        <connections>
+                                            <segue destination="rYD-Im-0Gw" kind="show" identifier="2" id="JmW-pW-hoD"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfP-lK-rc9">
+                                        <rect key="frame" x="0.0" y="452.5" width="375" height="150.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ETI-iH-RFa" firstAttribute="leading" secondItem="ThJ-fL-LRe" secondAttribute="leading" id="QDZ-Vm-bGn"/>
+                            <constraint firstAttribute="trailing" secondItem="ETI-iH-RFa" secondAttribute="trailing" id="TcH-Fh-ezo"/>
+                            <constraint firstItem="ETI-iH-RFa" firstAttribute="top" secondItem="xfp-2t-nlf" secondAttribute="bottom" id="evv-ee-OMk"/>
+                            <constraint firstItem="NjK-Tb-tuC" firstAttribute="top" secondItem="ETI-iH-RFa" secondAttribute="bottom" id="gNM-x6-oFZ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="What would you like to achieve today?" id="ZqQ-BZ-w92"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="879.20000000000005" y="112.89355322338831"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="z1e-cf-3JD">
+            <objects>
+                <viewController id="rYD-Im-0Gw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ciJ-GU-g0C"/>
+                        <viewControllerLayoutGuide type="bottom" id="lIM-jq-jej"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2HW-eb-mS5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jJ6-4u-vVg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BHO-UV-tWK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1639" y="113"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RbK-gg-Tyc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z2v-2m-z1I" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2sJ-ca-cw5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xOr-07-iFm" kind="relationship" relationship="rootViewController" id="pwz-jt-uHo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfg-56-3HA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-60" y="112.89355322338831"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="QA3-8g-zaw"/>
+    </inferredMetricsTieBreakers>
 </document>
