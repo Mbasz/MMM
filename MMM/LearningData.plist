@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Finish a selected online course.</string>
+	<string>Visit a museum.</string>
+	<string>Listen to 5 TED talks.</string>
+	<string>Watch a documentary.</string>
+	<string>Read an inspirational book.</string>
+</array>
+</plist>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Visit an art gallery.</string>
+	<string>Write a song/poem.</string>
+	<string>Draw for an hour.</string>
+	<string>Take a dance class.</string>
+	<string>Film and edit a movie.</string>
+</array>
+</plist>
