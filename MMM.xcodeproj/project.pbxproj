@@ -20,6 +20,7 @@
 		C1367F3A1F0D4D0400570AA0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1367F391F0D4D0400570AA0 /* MainViewController.swift */; };
 		C1367F3C1F0D4E9800570AA0 /* StepsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1367F3B1F0D4E9800570AA0 /* StepsTableViewController.swift */; };
 		C1E121551F0F3EC30007B42E /* ArtData.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1E121541F0F3EC30007B42E /* ArtData.plist */; };
+		C1E121591F100BA20007B42E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E121581F100BA20007B42E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		C1367F391F0D4D0400570AA0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C1367F3B1F0D4E9800570AA0 /* StepsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsTableViewController.swift; sourceTree = "<group>"; };
 		C1E121541F0F3EC30007B42E /* ArtData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ArtData.plist; sourceTree = "<group>"; };
+		C1E121581F100BA20007B42E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		6CABD9F21F0C399500133DBB /* MMM */ = {
 			isa = PBXGroup;
 			children = (
+				C1E121581F100BA20007B42E /* Assets.xcassets */,
 				6CABD9F31F0C399500133DBB /* AppDelegate.swift */,
 				C1E121511F0ED2C70007B42E /* View Controllers */,
 				C1E121501F0ED2B50007B42E /* Models */,
@@ -207,6 +210,7 @@
 				6CABD9F91F0C399500133DBB /* Main.storyboard in Resources */,
 				C12A04D91F0EAFA9003052B6 /* LearningData.plist in Resources */,
 				C12A04D71F0EAEE1003052B6 /* HealthData.plist in Resources */,
+				C1E121591F100BA20007B42E /* Assets.xcassets in Resources */,
 				C1E121551F0F3EC30007B42E /* ArtData.plist in Resources */,
 				C12A04DB1F0EAFDE003052B6 /* SocialData.plist in Resources */,
 			);

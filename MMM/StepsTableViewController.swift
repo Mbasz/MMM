@@ -71,6 +71,7 @@ class StepsTableViewController: UITableViewController {
         let user = User.current
         let alertController = UIAlertController (title: "Congratulations!", message: "You have completed another step.", preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action: UIAlertAction!) in
+            self.dismiss(animated: true, completion: nil)
             self.navigationController?.popToRootViewController(animated: true)
         }))
         switch (selectedCategory) {

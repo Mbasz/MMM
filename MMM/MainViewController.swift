@@ -13,6 +13,10 @@ import Alamofire
 class MainViewController: UIViewController {
     
     @IBOutlet weak var quoteLabel: UILabel!
+    @IBOutlet weak var healthStars: UIImageView!
+    @IBOutlet weak var learningStars: UIImageView!
+    @IBOutlet weak var socialStars: UIImageView!
+    @IBOutlet weak var artStars: UIImageView!
     
     let user = User.current
     var apiToContact = ""
@@ -22,15 +26,73 @@ class MainViewController: UIViewController {
         switch (user.selected) {
         case 0:
             apiToContact = "http://quotes.rest/qod?category=inspire"
+            self.quoteLabel.backgroundColor = UIColor.white
         case 1:
             apiToContact = "http://quotes.rest/qod?category=students"
+            self.quoteLabel.backgroundColor = UIColor.white
         case 2:
             apiToContact = "http://quotes.rest/qod?category=life"
+            self.quoteLabel.backgroundColor = UIColor.white
         case 3:
             apiToContact = "http://quotes.rest/qod?category=art"
+            self.quoteLabel.backgroundColor = UIColor.white
+        default:
+            self.quoteLabel.backgroundColor = UIColor(patternImage: UIImage(named: "poppy-1346086_640")!)
+        }
+        
+        switch (user.progress[0]) {
+        case 1:
+            healthStars.image = UIImage(named: "imageedit_1_5135310009")
+        case 2:
+            healthStars.image = UIImage(named: "imageedit_4_2114669609")
+        case 3:
+            healthStars.image = UIImage(named: "imageedit_6_8177445929")
+        case 4:
+            healthStars.image = UIImage(named: "imageedit_8_4039790060")
         default:
             break
         }
+        
+        switch (user.progress[1]) {
+        case 1:
+            learningStars.image = UIImage(named: "imageedit_1_5135310009")
+        case 2:
+            learningStars.image = UIImage(named: "imageedit_4_2114669609")
+        case 3:
+            learningStars.image = UIImage(named: "imageedit_6_8177445929")
+        case 4:
+            learningStars.image = UIImage(named: "imageedit_8_4039790060")
+        default:
+            break
+        }
+        
+        switch (user.progress[2]) {
+        case 1:
+            socialStars.image = UIImage(named: "imageedit_1_5135310009")
+        case 2:
+            socialStars.image = UIImage(named: "imageedit_4_2114669609")
+        case 3:
+            socialStars.image = UIImage(named: "imageedit_6_8177445929")
+        case 4:
+            socialStars.image = UIImage(named: "imageedit_8_4039790060")
+        default:
+            break
+        }
+        
+        switch (user.progress[3]) {
+        case 1:
+            artStars.image = UIImage(named: "imageedit_1_5135310009")
+        case 2:
+            artStars.image = UIImage(named: "imageedit_4_2114669609")
+        case 3:
+            artStars.image = UIImage(named: "imageedit_6_8177445929")
+        case 4:
+            artStars.image = UIImage(named: "imageedit_8_4039790060")
+        default:
+            break
+        }
+        
+        
         
         Alamofire.request(apiToContact).validate().responseJSON() { response in
             switch response.result {
@@ -71,7 +133,6 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func healthTapped(_ sender: Any) {
-        
         performSegue(withIdentifier: "StepsSegue", sender: 0)
     }
     

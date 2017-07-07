@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ETI-iH-RFa">
-                                <rect key="frame" x="0.0" y="60" width="375" height="605"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="610"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2C-4X-vmc">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
@@ -38,13 +38,13 @@
                                             <action selector="healthTapped:" destination="xOr-07-iFm" eventType="touchUpInside" id="nbH-jh-YVr"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jIc-JN-XWM">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageedit_1_7244074389" translatesAutoresizingMaskIntoConstraints="NO" id="nDm-Bh-rIa">
                                         <rect key="frame" x="0.0" y="70" width="375" height="60"/>
-                                        <color key="backgroundColor" red="0.0034805201889370452" green="0.84240164978223353" blue="0.32451389859008056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0034805201890000001" green="0.84240164979999999" blue="0.32451389860000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="Wc0-2O-twg"/>
+                                            <constraint firstAttribute="height" constant="60" id="Wb9-VT-5BD"/>
                                         </constraints>
-                                    </view>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJW-Xq-Z1v">
                                         <rect key="frame" x="0.0" y="130" width="375" height="70"/>
                                         <color key="backgroundColor" red="0.33587450117164125" green="0.71036646234081025" blue="0.80097953678477163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -59,13 +59,13 @@
                                             <action selector="learningTapped:" destination="xOr-07-iFm" eventType="touchUpInside" id="B0m-lP-q0q"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1h-b2-0Ku">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageedit_1_7244074389" translatesAutoresizingMaskIntoConstraints="NO" id="p8G-Oa-U6K">
                                         <rect key="frame" x="0.0" y="200" width="375" height="60"/>
-                                        <color key="backgroundColor" red="0.41775235925333831" green="0.86008114297390981" blue="0.96262293781725883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.41775235929999999" green="0.86008114300000005" blue="0.96262293779999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="Orm-6D-7DR"/>
+                                            <constraint firstAttribute="height" constant="60" id="x88-qx-1hm"/>
                                         </constraints>
-                                    </view>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENu-KG-HfM">
                                         <rect key="frame" x="0.0" y="260" width="375" height="70"/>
                                         <color key="backgroundColor" red="0.88824555837563457" green="0.50297202690654397" blue="0.35107747157625596" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -80,13 +80,13 @@
                                             <action selector="socialTapped:" destination="xOr-07-iFm" eventType="touchUpInside" id="1ic-v9-asZ"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBU-m2-gxv">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageedit_1_7244074389" translatesAutoresizingMaskIntoConstraints="NO" id="wEP-4j-oef">
                                         <rect key="frame" x="0.0" y="330" width="375" height="60"/>
-                                        <color key="backgroundColor" red="1" green="0.56684058537180437" blue="0.39427572095480257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.56684058540000004" blue="0.39427572100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="Tms-EN-9Z7"/>
+                                            <constraint firstAttribute="height" constant="60" id="u2E-gC-y8G"/>
                                         </constraints>
-                                    </view>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vT-SZ-KnL">
                                         <rect key="frame" x="0.0" y="390" width="375" height="70"/>
                                         <color key="backgroundColor" red="0.69302689305449294" green="0.44888676294176744" blue="0.84559515585177658" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -101,20 +101,20 @@
                                             <action selector="artTapped:" destination="xOr-07-iFm" eventType="touchUpInside" id="C5d-00-4aR"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="157-NL-SNb">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageedit_1_7244074389" translatesAutoresizingMaskIntoConstraints="NO" id="jqY-Js-ehc">
                                         <rect key="frame" x="0.0" y="460" width="375" height="60"/>
-                                        <color key="backgroundColor" red="0.79979628749081955" green="0.51804334016857201" blue="0.97586958478578678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.79979628749999998" green="0.51804334019999998" blue="0.97586958479999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="3OD-rm-66M"/>
+                                            <constraint firstAttribute="height" constant="60" id="fJb-Pl-2HO"/>
                                         </constraints>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfP-lK-rc9">
-                                        <rect key="frame" x="0.0" y="520" width="375" height="85"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfP-lK-rc9">
+                                        <rect key="frame" x="0.0" y="520" width="375" height="90"/>
+                                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="85" id="Je9-wD-Epi"/>
+                                            <constraint firstAttribute="height" constant="90" id="Je9-wD-Epi"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -130,7 +130,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Choose today's challenge" id="wPt-zv-ucn"/>
                     <connections>
+                        <outlet property="artStars" destination="jqY-Js-ehc" id="YUi-OD-kJE"/>
+                        <outlet property="healthStars" destination="nDm-Bh-rIa" id="caU-PO-jUm"/>
+                        <outlet property="learningStars" destination="p8G-Oa-U6K" id="agE-k4-JrH"/>
                         <outlet property="quoteLabel" destination="HfP-lK-rc9" id="I5l-qJ-1dy"/>
+                        <outlet property="socialStars" destination="wEP-4j-oef" id="W6c-Ak-L3B"/>
                         <segue destination="Xoy-OY-45U" kind="show" identifier="StepsSegue" id="KLz-qa-Ins"/>
                     </connections>
                 </viewController>
@@ -209,4 +213,7 @@
             <point key="canvasLocation" x="1730" y="113"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="imageedit_1_7244074389" width="750" height="120"/>
+    </resources>
 </document>

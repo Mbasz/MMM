@@ -14,6 +14,7 @@ class User: NSObject {
     static var current = User()
     
     var selected = -1
+    var progress = [0, 0, 0, 0]
     var selectedHealth = [0, 0, 0, 0, 0]
     var selectedLearning = [0, 0, 0, 0, 0]
     var selectedSocial = [0, 0, 0, 0, 0]
