@@ -13,7 +13,6 @@
 		6CABD9FE1F0C399500133DBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CABD9FC1F0C399500133DBB /* LaunchScreen.storyboard */; };
 		C12A04CF1F0DB174003052B6 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12A04CE1F0DB174003052B6 /* Cell.swift */; };
 		C12A04D11F0E9DA3003052B6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12A04D01F0E9DA3003052B6 /* User.swift */; };
-		C12A04D31F0E9E11003052B6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12A04D21F0E9E11003052B6 /* LoginViewController.swift */; };
 		C12A04D71F0EAEE1003052B6 /* HealthData.plist in Resources */ = {isa = PBXBuildFile; fileRef = C12A04D61F0EAEE1003052B6 /* HealthData.plist */; };
 		C12A04D91F0EAFA9003052B6 /* LearningData.plist in Resources */ = {isa = PBXBuildFile; fileRef = C12A04D81F0EAFA9003052B6 /* LearningData.plist */; };
 		C12A04DB1F0EAFDE003052B6 /* SocialData.plist in Resources */ = {isa = PBXBuildFile; fileRef = C12A04DA1F0EAFDE003052B6 /* SocialData.plist */; };
@@ -34,7 +33,6 @@
 		9A1C9CAEC8B18237AB190C01 /* Pods_MMM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12A04CE1F0DB174003052B6 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		C12A04D01F0E9DA3003052B6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		C12A04D21F0E9E11003052B6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C12A04D61F0EAEE1003052B6 /* HealthData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HealthData.plist; sourceTree = "<group>"; };
 		C12A04D81F0EAFA9003052B6 /* LearningData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LearningData.plist; sourceTree = "<group>"; };
 		C12A04DA1F0EAFDE003052B6 /* SocialData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SocialData.plist; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 			children = (
 				C1367F391F0D4D0400570AA0 /* MainViewController.swift */,
 				C1367F3B1F0D4E9800570AA0 /* StepsTableViewController.swift */,
-				C12A04D21F0E9E11003052B6 /* LoginViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -179,6 +176,7 @@
 				TargetAttributes = {
 					6CABD9EF1F0C399500133DBB = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M8ZCG3FX48;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -271,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C12A04D31F0E9E11003052B6 /* LoginViewController.swift in Sources */,
 				6CABD9F41F0C399500133DBB /* AppDelegate.swift in Sources */,
 				C12A04CF1F0DB174003052B6 /* Cell.swift in Sources */,
 				C1367F3C1F0D4E9800570AA0 /* StepsTableViewController.swift in Sources */,
@@ -399,7 +396,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 909D1E1F3270617633A8D91E /* Pods-MMM.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M8ZCG3FX48;
 				INFOPLIST_FILE = MMM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Melody-Yang.MMM";
@@ -412,7 +411,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8D6A740AD48936BB67C1A932 /* Pods-MMM.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M8ZCG3FX48;
 				INFOPLIST_FILE = MMM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Melody-Yang.MMM";

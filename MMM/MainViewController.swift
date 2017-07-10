@@ -12,6 +12,12 @@ import Alamofire
 
 class MainViewController: UIViewController {
     
+    @IBOutlet weak var healthButton: UIButton!
+    @IBOutlet weak var learningButton: UIButton!
+    @IBOutlet weak var socialButton: UIButton!
+    @IBOutlet weak var artButton: UIButton!
+    
+    
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var healthStars: UIImageView!
     @IBOutlet weak var learningStars: UIImageView!
@@ -22,6 +28,13 @@ class MainViewController: UIViewController {
     var apiToContact = ""
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        if user.dailyGoal == 1 {
+            healthButton.isUserInteractionEnabled = false
+            learningButton.isUserInteractionEnabled = false
+            socialButton.isUserInteractionEnabled = false
+            artButton.isUserInteractionEnabled = false
+        }
         
         switch (user.selected) {
         case 0:
@@ -99,7 +112,7 @@ class MainViewController: UIViewController {
             case .success:
                 if let value = response.result.value {
                     let json = JSON(value)
-                    self.quoteLabel.text = json["contents"]["quotes"][0]["quote"].stringValue
+                    self.quoteLabel.text = "\"" + json["contents"]["quotes"][0]["quote"].stringValue + "\""
                     self.navigationItem.title = "You've accomplished your daily goal :)"
                     self.loadView()
                 }
@@ -132,22 +145,33 @@ class MainViewController: UIViewController {
         }
     }
     
+    @IBAction func unwindToMain(_ segue: UIStoryboardSegue) {
+        
+    }
+    
     @IBAction func healthTapped(_ sender: Any) {
-        performSegue(withIdentifier: "StepsSegue", sender: 0)
+        if (user.dailyGoal == 0) {
+            performSegue(withIdentifier: "StepsSegue", sender: 0)
+        }
     }
     
     @IBAction func learningTapped(_ sender: Any) {
-        performSegue(withIdentifier: "StepsSegue", sender: 1)
+        if (user.dailyGoal == 0) {
+            performSegue(withIdentifier: "StepsSegue", sender: 1)
+        }
     }
     
     
     @IBAction func socialTapped(_ sender: Any) {
-        performSegue(withIdentifier: "StepsSegue", sender: 2)
+        if (user.dailyGoal == 0) {
+            performSegue(withIdentifier: "StepsSegue", sender: 2)
+        }
     }
     
-    
     @IBAction func artTapped(_ sender: Any) {
-        performSegue(withIdentifier: "StepsSegue", sender: 3)
+        if (user.dailyGoal == 0) {
+            performSegue(withIdentifier: "StepsSegue", sender: 3)
+        }
     }
 }
 

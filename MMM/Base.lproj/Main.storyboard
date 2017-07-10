@@ -130,10 +130,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="Choose today's challenge" id="wPt-zv-ucn"/>
                     <connections>
+                        <outlet property="artButton" destination="4vT-SZ-KnL" id="Vyx-iN-7YK"/>
                         <outlet property="artStars" destination="jqY-Js-ehc" id="YUi-OD-kJE"/>
+                        <outlet property="healthButton" destination="R2C-4X-vmc" id="hkB-2p-CaT"/>
                         <outlet property="healthStars" destination="nDm-Bh-rIa" id="caU-PO-jUm"/>
+                        <outlet property="learningButton" destination="DJW-Xq-Z1v" id="Y1t-aJ-S0l"/>
                         <outlet property="learningStars" destination="p8G-Oa-U6K" id="agE-k4-JrH"/>
                         <outlet property="quoteLabel" destination="HfP-lK-rc9" id="I5l-qJ-1dy"/>
+                        <outlet property="socialButton" destination="ENu-KG-HfM" id="aBV-O2-f7y"/>
                         <outlet property="socialStars" destination="wEP-4j-oef" id="W6c-Ak-L3B"/>
                         <segue destination="Xoy-OY-45U" kind="show" identifier="StepsSegue" id="KLz-qa-Ins"/>
                     </connections>
@@ -177,7 +181,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="0" textLabel="l4U-cR-N78" style="IBUITableViewCellStyleDefault" id="t6q-bI-AGs" customClass="Cell" customModule="MMM" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="StepsCell" textLabel="l4U-cR-N78" style="IBUITableViewCellStyleDefault" id="t6q-bI-AGs" customClass="Cell" customModule="MMM" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t6q-bI-AGs" id="x9z-0x-coD">
@@ -194,7 +198,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="stepLabel" destination="l4U-cR-N78" id="XkD-9J-qWX"/>
+                                    <outlet property="stepLabel" destination="l4U-cR-N78" id="1YS-ze-qI6"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -206,9 +210,11 @@
                     </tableView>
                     <connections>
                         <outlet property="titleLabel" destination="Pdr-5S-t0z" id="OSe-jc-hvp"/>
+                        <segue destination="ypt-CV-3jx" kind="unwind" identifier="UnwindToMain" unwindAction="unwindToMain:" id="gs8-FX-YAD"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TON-Ao-7Ig" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ypt-CV-3jx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1730" y="113"/>
         </scene>
